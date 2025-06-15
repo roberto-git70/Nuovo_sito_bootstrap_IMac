@@ -1,9 +1,3 @@
-/* Amiso | Web solutions HTML Template
-
-Template Name: Amiso
-Version: 1.0.0
-License: copyright commercial
-
 /************ TABLE OF CONTENTS ***************
 1. Fonts
 2. Reset
@@ -600,12 +594,11 @@ textarea.form-control {
   }
 }
 /*** 
-
 ====================================================================
 Reset
 ====================================================================
-
 ***/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -615,12 +608,11 @@ Reset
 }
 
 /*** 
-
 ====================================================================
 Global Settings
 ====================================================================
-
 ***/
+
 textarea {
   overflow: hidden;
   resize: none;
@@ -1128,6 +1120,7 @@ Scroll To Top style
 /*========================
   Select2 Dropdown Plugin
 ========================*/
+
 .select2-results__option {
   padding: 0 10px;
   color: #7c858c;
@@ -2353,10 +2346,10 @@ Section Title
   Main Slider
 ====================================================================
 ***/
+
 .main-slider {
   position: relative;
 }
-
 .main-slider h1 {
   position: relative;
   display: block;
@@ -2753,6 +2746,7 @@ Section Title
 		About Section
 ====================================================================
 ***/
+
 .about-section {
   position: relative;
   padding: 120px 0 70px;
