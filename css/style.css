@@ -779,44 +779,12 @@ li {
   background-image: url(../images/icons/pattern-9.jpg);
 }
 
-.bg-pattern-10 {
-  background-image: url(../images/icons/pattern-10.jpg);
-}
-
-.bg-pattern-11 {
-  background-image: url(../images/icons/pattern-11.jpg);
-}
-
-.bg-pattern-12 {
-  background-image: url(../images/icons/pattern-12.jpg);
-}
-
-.bg-pattern-13 {
-  background-image: url(../images/icons/pattern-13.jpg);
-}
-
-.bg-pattern-14 {
-  background-image: url(../images/icons/pattern-14.jpg);
-}
-
-.bg-pattern-15 {
-  background-image: url(../images/icons/pattern-15.jpg);
-}
-
-.bg-pattern-16 {
-  background-image: url(../images/icons/pattern-16.jpg);
-}
-
 .bg-pattern-17 {
   background-image: url(../images/icons/pattern-17.jpg);
 }
 
 .bg-pattern-18 {
   background-image: url(../images/icons/pattern-18.jpg);
-}
-
-.bg-pattern-19 {
-  background-image: url(../images/icons/pattern-19.jpg);
 }
 
 /*=======================
@@ -1099,7 +1067,6 @@ Scroll To Top style
 .social-icon-three li a:hover {
   color: var(--theme-color2);
 }
-
 /*======================
     Tabs Box
 ======================*/
@@ -1128,7 +1095,6 @@ Scroll To Top style
   position: relative;
   margin-bottom: 40px;
 }
-
 .default-tabs .tab-buttons li {
   position: relative;
   float: left;
@@ -1311,324 +1277,12 @@ Scroll To Top style
   color: var(--theme-color1);
 }
 
-/*Btn Style two*/
-.btn-style-two {
-  position: relative;
-  font-size: 13px;
-  line-height: 24px;
-  padding: 15px 50px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  overflow: hidden;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: var(--bg-theme-color1);
-}
-.btn-style-two:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  content: "";
-  background-color: var(--bg-theme-color2);
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-          transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-}
-.btn-style-two:hover:before {
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-.btn-style-two:hover {
-  color: #ffffff;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-.btn-style-two.hvr-light:hover {
-  color: var(--theme-color2);
-}
-.btn-style-two.hvr-light:before {
-  background-color: #ffffff;
-}
-
-/*Btn Style Three*/
-.btn-style-three {
-  position: relative;
-  font-size: 13px;
-  line-height: 24px;
-  padding: 15px 50px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  overflow: hidden;
-  text-transform: uppercase;
-  color: var(--theme-color1);
-  background: var(--bg-theme-color3);
-}
-.btn-style-three:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  content: "";
-  background-color: var(--bg-theme-color1);
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-          transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-}
-.btn-style-three:hover:before {
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-.btn-style-three:hover {
-  color: #ffffff;
-}
-
-.theme-btn.small {
-  padding: 10px 40px;
-  line-height: 20px;
-  font-size: 12px;
-}
-
 /*** 
-
 ====================================================================
-  Anim Icons
+  RICERCA POPUP
 ====================================================================
-
 ***/
-.anim-icons {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
 
-.anim-icons.full-width {
-  max-width: 100%;
-}
-
-.anim-icons .icon {
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.icon-quote {
-  width: 64px;
-  height: 46px;
-  background-image: url(../images/icons/icon-quote.png);
-}
-
-.bounce-y {
-  -webkit-animation: bounce-y 10s infinite linear;
-          animation: bounce-y 10s infinite linear;
-}
-
-.bounce-x {
-  -webkit-animation: bounce-x 10s infinite linear;
-          animation: bounce-x 10s infinite linear;
-}
-
-.zoom-one {
-  -webkit-animation: zoom-one 10s infinite linear;
-          animation: zoom-one 10s infinite linear;
-}
-
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-webkit-keyframes bounce-y {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes bounce-y {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-webkit-keyframes bounce-x {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@keyframes bounce-x {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-webkit-keyframes zoom-one {
-  0% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-}
-@keyframes zoom-one {
-  0% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-}
-@-webkit-keyframes zoom-two {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes zoom-two {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-.overlay-anim {
-  position: relative;
-}
-.overlay-anim:after {
-  background: rgba(255, 255, 255, 0.3);
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0;
-  opacity: 1;
-  z-index: 9;
-  pointer-events: none;
-}
-.overlay-anim:hover:after {
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: all 400ms linear;
-  transition: all 400ms linear;
-}
-
-/*** 
-
-====================================================================
-  Search Popup
-====================================================================
-
-***/
 .search-popup {
   position: fixed;
   left: 0;
@@ -1762,12 +1416,18 @@ Scroll To Top style
 }
 
 /*** 
+====================================================================
+  RICERCA POPUP FINE
+====================================================================
+***/
 
+
+/*** 
 ====================================================================
 Main Header
 ====================================================================
-
 ***/
+
 .header-span {
   position: relative;
   height: 110px;
@@ -2267,12 +1927,11 @@ Header Style One
 }
 
 /*** 
-
 ====================================================================
 Sticky Header
 ====================================================================
-
 ***/
+
 .sticky-header {
   position: fixed;
   visibility: hidden;
@@ -2349,6 +2008,7 @@ Sticky Header
       Mobile Menu
 ====================================================================
 ***/
+
 .mobile-nav-toggler {
   position: relative;
   font-size: 24px;
@@ -2627,6 +2287,7 @@ Sticky Header
 Section Title
 ====================================================================
 ***/
+
 .sec-title {
   position: relative;
   margin-bottom: 50px;
@@ -2717,7 +2378,6 @@ Section Title
   white-space: nowrap;
   min-width: 200px !important;
 }
-
 .tp-dottedoverlay {
   background-image: url(../images/main-slider/bg-pattern.jpg);
   background-repeat: no-repeat;
@@ -2759,6 +2419,7 @@ Section Title
     Banner Section
 ====================================================================
 ***/
+
 .banner-section {
   position: relative;
   overflow: hidden;
@@ -2933,6 +2594,7 @@ Section Title
     Banner Section Two
 ====================================================================
 ***/
+
 .banner-section-two {
   position: relative;
   overflow: hidden;
@@ -3179,15 +2841,6 @@ Section Title
   position: relative;
   padding-right: 110px;
 }
-.about-section .image-column .inner-column:before {
-  position: absolute;
-  right: 65px;
-  top: 70px;
-  width: 451px;
-  height: 381px;
-  background-image: url(../images/icons/pattern-5.png);
-  content: "";
-}
 .about-section .image-column .image-1 {
   position: relative;
   border-radius: 10px;
@@ -3263,6 +2916,7 @@ Section Title
 		About Section  Two
 ====================================================================
 ***/
+
 .about-section-two {
   position: relative;
   padding: 120px 0 70px;
@@ -3401,63 +3055,6 @@ Section Title
   font-weight: 700;
   line-height: 20px;
   color: #ffffff;
-}
-
-/*** 
-====================================================================
-		About Section Three
-====================================================================
-***/
-.about-section-three {
-  position: relative;
-  background-color: var(--theme-color3);
-  padding: 120px 0 0;
-}
-.about-section-three .content-column {
-  position: relative;
-  margin-bottom: 50px;
-  z-index: 1;
-}
-.about-section-three .content-column .inner-column {
-  position: relative;
-  padding-left: 90px;
-}
-.about-section-three .image-column {
-  position: relative;
-}
-.about-section-three .image-column .inner-column {
-  position: relative;
-  margin-left: -370px;
-}
-.about-section-three .image-column .image-box {
-  position: relative;
-}
-.about-section-three .image-column .image-box .image {
-  margin-bottom: 0;
-}
-.about-section-three .image-column .image-box img {
-  width: 100%;
-}
-.about-section-three .info-box {
-  position: relative;
-  padding-left: 185px;
-  margin-bottom: 40px;
-  padding-top: 10px;
-  min-height: 80px;
-}
-.about-section-three .info-box .image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 155px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.about-section-three .info-box .title .num {
-  font-size: 30px;
-  font-weight: 700;
-  margin-left: 10px;
-  color: var(--theme-color2);
 }
 
 /* ====================================================================
@@ -3610,12 +3207,11 @@ Section Title
 }
 
 /*** 
-
 ====================================================================
         Projects Section Two
 ====================================================================
-
 ***/
+
 .projects-section-two {
   position: relative;
   padding: 120px 0;
@@ -3677,149 +3273,12 @@ Section Title
   margin-top: 0;
 }
 
-/***
-====================================================================
-    Process Section
-====================================================================
-***/
-
-/* ====================================================================
-	Testimonial Section
-====================================================================
- */
-***/
-.testimonial-section {
-  position: relative;
-  padding: 120px 0 90px;
-  background-color: #181818;
-}
-.testimonial-section .dotted-map {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/icons/dotted-map-2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.testimonial-section .carousel-outer {
-  position: relative;
-  margin-right: -490px;
-}
-.testimonial-section .owl-dots {
-  position: absolute;
-  left: -500px;
-  bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.testimonial-section .owl-dots .owl-dot {
-  display: block;
-  height: 20px;
-  width: 20px;
-  background-color: #5e5e5e;
-  border: 3px solid #181818;
-  margin-right: 3px;
-  border-radius: 50%;
-}
-.testimonial-section .owl-dots .owl-dot.active {
-  opacity: 1;
-  background-color: var(--bg-theme-color2);
-  border-color: var(--bg-theme-color2);
-}
-
-.testimonial-block {
-  position: relative;
-  padding: 60px 0 0;
-}
-.testimonial-block .inner-box {
-  position: relative;
-  background-color: #fff;
-  border-top: 12px solid var(--border-theme-color2);
-  padding: 30px 50px 45px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-.testimonial-block .inner-box:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 138px;
-  height: 96px;
-  background-color: var(--theme-color3);
-  border-radius: 0 0 500px 0;
-  content: "";
-}
-
-
-.testimonial-block .image-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  padding-left: 140px;
-  margin-bottom: 25px;
-}
-.testimonial-block .image-box .image {
-  position: absolute;
-  left: -10px;
-  top: -100px;
-  margin-bottom: 0;
-  height: 132px;
-  width: 132px;
-  padding: 12px;
-}
-.testimonial-block .image-box .image:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 50%;
-  width: 100%;
-  background-color: var(--bg-theme-color2);
-  border-radius: 120px 120px 0 0;
-  content: "";
-}
-.testimonial-block .image-box .image img {
-  height: 100%;
-  width: 100%;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-}
-.testimonial-block .name {
-  margin-bottom: 2px;
-}
-.testimonial-block .designation {
-  position: relative;
-  display: block;
-  font-size: 14px;
-  line-height: 26px;
-  color: #6a6a6a;
-  font-weight: 400;
-}
-.testimonial-block .rating {
-  position: relative;
-  color: #ffba25;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-}
-
 /*** 
 ====================================================================
 		FAQ's Sectiom
 ====================================================================
 ***/
+
 .faqs-section {
   position: relative;
   padding: 120px 0 70px;
@@ -3853,7 +3312,6 @@ Section Title
   width: 220px;
   text-align: center;
 }
-
 .pie-graph {
   position: relative;
   padding-bottom: 25px;
@@ -4172,95 +3630,12 @@ SEZIONE MARQUEE
     SEZIONE MARQUEE FINE
 ==================================================================== */
 
-
-/* ====================================================================
-    Work Section
-==================================================================== */
-
-.work-section {
-  position: relative;
-  padding: 120px 0 60px;
-  background-color: var(--theme-color3);
-}
-.work-section .content-column {
-  margin-bottom: 20px;
-}
-.work-section .features-column .inner-column {
-  padding-left: 100px;
-  padding-top: 25px;
-}
-
-.work-block {
-  position: relative;
-}
-.work-block .inner-box {
-  padding-left: 200px;
-  max-width: 510px;
-  min-height: 172px;
-}
-.work-block .image {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.work-block .image img {
-  height: 172px;
-  width: 172px;
-  border-radius: 50%;
-}
-
-.feature-block-four {
-  position: relative;
-  padding-bottom: 60px;
-  border-bottom: 1px solid #dcdce0;
-  margin-bottom: 60px;
-}
-.feature-block-four:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-.feature-block-four .inner-box {
-  position: relative;
-  padding-left: 100px;
-}
-.feature-block-four .inner-box:hover .icon {
-  -webkit-transform: rotateY(190deg);
-          transform: rotateY(190deg);
-  color: var(--theme-color1);
-}
-.feature-block-four .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 64px;
-  line-height: 1em;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  color: var(--theme-color2);
-}
-.feature-block-four .title {
-  margin-bottom: 10px;
-  letter-spacing: 0.05em;
-}
-.feature-block-four .text {
-  letter-spacing: 0.05em;
-}
-
 /*** 
-
-====================================================================
-    Work Section Two
-====================================================================
-
-***/
-
-/*** 
-
 ====================================================================
     Why Choose Us
 ====================================================================
-
 ***/
+
 .why-choose-us {
   position: relative;
   padding: 120px 0 70px;
@@ -4344,12 +3719,11 @@ SEZIONE MARQUEE
 }
 
 /*** 
-
 ====================================================================
     VANTAGGI
 ====================================================================
-
 ***/
+
 .vantaggi-azie {
   position: relative;
   padding: 120px 0 70px; /* aumentato il padding-top */
@@ -4364,7 +3738,6 @@ SEZIONE MARQUEE
 .vantaggi-azie .sec-title h2 {
   margin-top: 40px; /* distacco visivo dal bordo superiore */
 }
-
 
 .vantaggi-azie .sec-title {
   margin-bottom: 50px;
@@ -4517,6 +3890,7 @@ SEZIONE MARQUEE
     Features Section
 ====================================================================
 ***/
+
 .features-section {
   position: relative;
   padding: 120px 0 70px;
@@ -4607,18 +3981,19 @@ SEZIONE MARQUEE
   margin-bottom: 0;
 }
 
+/*** 
+====================================================================
+    Features Section FINE
+====================================================================
+***/
+
 
 /*** 
-
 ====================================================================
-    Features Section Two
+    Features Section INIZIO
 ====================================================================
-
-====================================================================
-    Features Section Three
-====================================================================
-
 ***/
+
 .features-section-three {
   position: relative;
   padding: 120px 0 70px;
@@ -4689,11 +4064,19 @@ SEZIONE MARQUEE
   margin-bottom: 0;
 }
 
+/*** 
+====================================================================
+    Features Section FINE
+====================================================================
+***/
+
+
 /***
 ====================================================================
 		Call To Action
 ====================================================================
 ***/
+
 .call-to-action {
   position: relative;
   background-color: var(--bg-theme-color2);
@@ -4740,6 +4123,7 @@ SEZIONE MARQUEE
     Contact Info Section
 ====================================================================
 ***/
+
 .contact-info-section {
   position: relative;
   padding: 120px 0;
@@ -4913,6 +4297,7 @@ SEZIONE MARQUEE
     Contact Section
 ====================================================================
 ***/
+
 .contact-section {
   position: relative;
   padding: 120px 0;
@@ -5060,6 +4445,7 @@ SEZIONE MARQUEE
     Map Section
 ====================================================================
 ***/
+
 .map-section {
   position: relative;
   padding: 150px 0;
@@ -5270,9 +4656,6 @@ Page Title
 .page-title.style-two .page-breadcrumb li a:hover {
   color: rgb(7, 7, 16);
 }
-
-
-
 
 /* ================================== */
 /* PERCHE'LAVORARE CON NOI */
@@ -5837,21 +5220,13 @@ Page Title
     margin-top: 20px;
   }
 }
-/***
-
-
-
-
-
-
-
-
 
 /***
 =============================================
     Services Details
 =============================================
 ***/
+
 .service-sidebar {
   position: relative;
   display: block;
@@ -6409,6 +5784,7 @@ Page Title
 /*--------------------------------------------------------------
 # Project Details
 --------------------------------------------------------------*/
+
 .project-details__img {
   position: relative;
   display: block;
@@ -7026,6 +6402,7 @@ CTA IL NOSTRO METODO
 Sidebar
 ====================================================================
 ***/
+
 @media (max-width: 991px) {
   .sidebar {
     margin-top: 50px;
@@ -7415,7 +6792,7 @@ Sidebar
   -ms-flex-align: center;
   align-items: center;
 }
-/* .contact-details__info li .icon {
+.contact-details__info li .icon {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -7431,7 +6808,7 @@ Sidebar
   justify-content: center;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-} */
+}
 
 .contact-details__info li .icon {
   height: 50px;
@@ -7495,12 +6872,11 @@ Sidebar
 }
 
 /***
-
 ==================================================================
 	Main Footer
 ==================================================================
-
 ***/
+
 .main-footer {
   position: relative;
   background-color: #181818;
