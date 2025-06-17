@@ -31,6 +31,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- Google Recaptcha -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -705,87 +706,109 @@
   </section>
   <!-- PUNTI DI FORZA INDEX 2 FINE -->
 
-<!-- Sezione Contatti -->
+
 <section class="contact-section pt-50 pb-0">
   <div class="auto-container">
     <div class="row">
+      
+      <!-- Colonna Form -->
+      <div class="form-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <div class="contact-form wow fadeInLeft">
+            <div class="sec-title">
+              <h2>Parlaci del tuo progetto</h2>
+              <div class="text">
+                Un primo messaggio può diventare il primo passo verso un sito davvero tuo.
+              </div>
+            </div>
 
-<!-- Colonna Form -->
-<div class="form-column col-lg-6 col-md-12 col-sm-12">
-  <div class="inner-column">
-    <div class="contact-form wow fadeInLeft">
-      <div class="sec-title">
-        <h2>Parlaci del tuo progetto</h2>
-        <div class="text">
-          Un primo messaggio può diventare il primo passo verso un sito davvero tuo.
-        </div>
-      </div>
+            <!-- Contact Form -->
+            <form id="contact_form" name="contact_form" action="includes/sendmail.php" method="post">
+              <div class="row">
+                <!-- Nome -->
+                <div class="col-sm-6 form-group">
+                  <div class="mb-3">
+                    <input name="form_name" type="text" class="form-control required"
+                           placeholder="Nome"
+                           aria-label="Il tuo nome"
+                           pattern="[A-Za-zÀ-ÿ\s\-']{2,50}"
+                           title="Inserisci un nome valido (solo lettere e spazi, minimo 2 caratteri)">
+                  </div>
+                </div>
 
-<!-- Contact Form -->
-<form id="contact_form" name="contact_form" action="includes/sendmail.php" method="post" role="form"
-  aria-label="Modulo di contatto per richieste personalizzate">
+                <!-- Email -->
+                <div class="col-sm-6 form-group">
+                  <div class="mb-3">
+                    <input name="form_email" type="email" class="form-control required email"
+                           placeholder="Email"
+                           aria-label="La tua Email"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                           title="Inserisci un indirizzo email valido">
+                  </div>
+                </div>
+              </div>
 
-  <div class="row">
-    <div class="col-sm-6 form-group">
-      <label for="form_name" class="sr-only">Nome</label>
-      <input id="form_name" name="form_name" class="form-control required" type="text" placeholder="Nome"
-        required>
-    </div>
-    <div class="col-sm-6 form-group">
-      <label for="form_email" class="sr-only">Email</label>
-      <input id="form_email" name="form_email" class="form-control required email" type="email"
-        placeholder="Email" required>
-    </div>
-  </div>
+              <div class="row">
+                <!-- Oggetto -->
+                <div class="col-sm-6 form-group">
+                  <div class="mb-3">
+                    <input name="form_subject" type="text" class="form-control required"
+                           placeholder="Oggetto"
+                           aria-label="Oggetto"
+                           pattern=".{3,60}"
+                           title="Inserisci un oggetto (minimo 3 caratteri)">
+                  </div>
+                </div>
 
-  <div class="row">
-    <div class="col-sm-6 form-group">
-      <label for="form_subject" class="sr-only">Oggetto</label>
-      <input id="form_subject" name="form_subject" class="form-control required" type="text"
-        placeholder="Oggetto">
-    </div>
-    <div class="col-sm-6 form-group">
-      <label for="form_phone" class="sr-only">Telefono</label>
-      <input id="form_phone" name="form_phone" class="form-control" type="tel" placeholder="Telefono">
-    </div>
-  </div>
+                <!-- Telefono -->
+                <div class="col-sm-6 form-group">
+                  <div class="mb-3">
+                    <input name="form_phone" type="tel" class="form-control"
+                           placeholder="Telefono"
+                           aria-label="Telefono"
+                           pattern="[0-9]{8,15}"
+                           title="Inserisci un numero di telefono valido (8-15 cifre)">
+                  </div>
+                </div>
+              </div>
 
-  <div class="form-group">
-    <label for="form_message" class="sr-only">Messaggio</label>
-    <textarea id="form_message" name="form_message" class="form-control required" rows="7"
-      placeholder="Messaggio" required></textarea>
-  </div>
+              <!-- Messaggio -->
+              <div class="mb-3 form-group">
+                <textarea name="form_message" class="form-control required" rows="7"
+                          placeholder="Messaggio"
+                          aria-label="Messaggio"
+                          pattern=".{10,1000}"
+                          title="Inserisci un messaggio di almeno 10 caratteri"></textarea>
+              </div>
 
-  <div class="g-recaptcha" data-sitekey="6LfF4zYeAAAAAFIENRpyuSsUn2iRZuDP7sTv8u24"
-    style="margin-bottom: 15px;"></div>
+              <!-- CAPTCHA -->
+              <div class="g-recaptcha" data-sitekey="6LfF4zYeAAAAAFIENRpyuSsUn2iRZuDP7sTv8u24" style="margin-bottom: 15px;"></div>
 
-  <div class="mb-3 text-center pulsanti-responsive">
-    <input name="form_botcheck" type="hidden" value="">
-    <button type="submit" class="theme-btn btn-style-one btn-invia" aria-label="Invia il messaggio">
-      <span class="btn-title">Invia</span>
-    </button>
-    <button type="reset" class="theme-btn btn-style-one btn-cancella" aria-label="Cancella il modulo">
-      <span class="btn-title">Cancella</span>
-    </button>
-  </div>
-
-</form>
-</div>
-</div>
-</div>
-
-        <!-- Colonna immagine -->
-        <div class="image-column col-lg-6 col-md-12">
-          <div class="inner-column">
-            <figure class="image">
-              <img src="images/resource/contact.avif" alt="Illustrazione simbolica di contatto" loading="lazy">
-            </figure>
+              <!-- Pulsanti -->
+              <div class="mb-3 text-center pulsanti-responsive">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="theme-btn btn-style-one btn-invia"><span class="btn-title">Invia</span></button>
+                <button type="reset" class="theme-btn btn-style-one btn-cancella"><span class="btn-title">Cancella</span></button>
+              </div>
+            </form>
           </div>
         </div>
-
       </div>
+
+      <!-- Colonna immagine -->
+      <div class="image-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <figure class="image">
+            <img src="images/resource/contact.avif" alt="Illustrazione simbolica di contatto" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- MARQUEE - Parole chiave animate -->
   <section class="marquee-section style-two pt-0 pb-0" aria-labelledby="marquee-heading">
@@ -923,8 +946,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 
   <script>
     (function ($) {
