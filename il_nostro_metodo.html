@@ -13,11 +13,6 @@
   <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
   <link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
   <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
-  <link rel="preload" as="image" href="images/resource/img-index-slide_1.webp" type="image/webp" fetchpriority="high">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <!-- Favicon -->
@@ -32,10 +27,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- Google Recaptcha -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
 
 <body>
-  
+  <div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
     <!-- Main Header-->
     <header class="main-header header-style-one">
       <!-- Header Top -->
@@ -523,7 +519,7 @@
 
 <!-- BLOCCO FAQ -->
     <section class="faqs-section">
-        <div class="bg bg-pattern-17"></div>
+        <div class="bg bg-pattern-4"></div>
         <div class="auto-container">
             <div class="sec-title text-center">
                 <!--  <span class="sub-title">FAQ</span> -->
@@ -674,23 +670,29 @@
             </div>
           </div>
 
- <!-- Footer gallery con title -->
-<div class="footer-column col-xl-3 col-lg-4 col-md-4 col-sm-8">
-  <div class="footer-widget gallery-widget">
-    <h6 class="widget-title">Soluzioni</h6>
-    <div class="widget-content">
-      <div class="outer clearfix">
-        <figure class="image"><a href="aziendali.html" aria-label="Siti aziendali" title="Vai alla pagina dei Siti Aziendali"><img src="images/resource/img-aziendale-thumb.avif" alt="Miniatura sito aziendale"></a></figure>
-        <figure class="image"><a href="ecommerce.html" aria-label="Siti ecommerce" title="Vai alla pagina dei Siti Ecommerce"><img src="images/resource/img-ecommerce-thumb.webp" alt="Miniatura sito ecommerce"></a></figure>
-        <figure class="image"><a href="landing.html" aria-label="Landing page" title="Vai alla pagina Landing Page"><img src="images/resource/img-landing-thumb.webp" alt="Miniatura landing page"></a></figure>
-        <figure class="image"><a href="professionisti.html" aria-label="Siti per professionisti" title="Vai alla pagina dei siti per Professionisti"><img src="images/resource/img-professional-thumb.avif" alt="Miniatura sito per professionisti"></a></figure>
-        <figure class="image"><a href="/" aria-label="Home MM&R" title="logo mm&r"><img src="images/logo_top_1.webp"alt="Logo MM&R Web Agency"></a></figure>
-        <figure class="image"><a href="vetrina.html" aria-label="Siti vetrina" title="Vai alla pagina dei siti vetrina"><img src="images/resource/img-vetrina-thunb.jpg" alt="Miniatura sito vetrina"></a></figure>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Footer gallery con title END-->
+          <!-- Soluzioni / Mini-galleria -->
+          <div class="footer-column col-xl-3 col-lg-4 col-md-4 col-sm-8">
+            <div class="footer-widget gallery-widget">
+              <h6 class="widget-title">Soluzioni</h6>
+              <div class="widget-content">
+                <div class="outer clearfix">
+                  <figure class="image"><a href="aziendali.html" aria-label="Siti aziendali"><img
+                        src="images/resource/img-aziendale-thumb.avif" alt="Miniatura sito aziendale"></a></figure>
+                  <figure class="image"><a href="ecommerce.html" aria-label="Siti ecommerce"><img
+                        src="images/resource/img-ecommerce-thumb.webp" alt="Miniatura sito ecommerce"></a></figure>
+                  <figure class="image"><a href="landing.html" aria-label="Landing page"><img
+                        src="images/resource/img-landing-thumb.webp" alt="Miniatura landing page"></a></figure>
+                  <figure class="image"><a href="professionisti.html" aria-label="Siti per professionisti"><img
+                        src="images/resource/img-professional-thumb.avif" alt="Miniatura sito per professionisti"></a>
+                  </figure>
+                  <figure class="image"><a href="/" aria-label="Home MM&R"><img src="images/logo_top_1.webp"
+                        alt="Logo MM&R Web Agency"></a></figure>
+                  <figure class="image"><a href="vetrina.html" aria-label="Siti vetrina"><img
+                        src="images/resource/img-vetrina-thunb.webp" alt="Miniatura sito vetrina"></a></figure>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Contatti -->
           <div class="footer-column col-xl-3 col-lg-4 col-md-4">
@@ -716,7 +718,7 @@
       <div class="auto-container">
         <div class="inner-container">
           <div class="copyright-text">
-            &copy; Tutti i diritti riservati — <a href="/"" aria-label="Torna alla homepage">MM&amp;R Web
+            &copy; Tutti i diritti riservati — <a href="/" aria-label="Torna alla homepage">MM&amp;R Web
               Design</a>
           </div>
         </div>
@@ -739,12 +741,14 @@
   <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>    
   </script>
 <!--Revolution Slider-->
-<script src="js/wow.js" defer></script>
-<script src="js/appear.js" defer></script>
-<script src="js/knob.js" defer></script>
-<script src="js/select2.min.js" defer></script>
-<script src="js/owl.js" defer></script>
-<script src="js/script.js" defer></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
 <!-- form submit -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.form.min.js"></script>
