@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soluzioniwebdesign.com/sitemap.xml
