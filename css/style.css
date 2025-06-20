@@ -2819,6 +2819,12 @@ Sticky Header
   color: var(--theme-color2);
 }
 
+@media (max-width: 991px) {
+  .mobile-nav-toggler {
+    display: block !important;
+  }
+}
+
 /*** 
 
 ====================================================================
