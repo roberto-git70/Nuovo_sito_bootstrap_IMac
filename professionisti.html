@@ -491,50 +491,15 @@
     <!-- Scroll To Top -->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
-
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/bxslider.js"></script>
-    <script src="js/mixitup.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/script.js"></script>
-
-    <!-- form submit -->
-   <!--  <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.form.min.js"></script> -->
-    <script>
-        (function ($) {
-            $("#contact_form").validate({
-                submitHandler: function (form) {
-                    var form_btn = $(form).find('button[type="submit"]');
-                    var form_result_div = '#form-result';
-                    $(form_result_div).remove();
-                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                    var form_btn_old_msg = form_btn.html();
-                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                    $(form).ajaxSubmit({
-                        dataType: 'json',
-                        success: function (data) {
-                            if (data.status == 'true') {
-                                $(form).find('.form-control').val('');
-                            }
-                            form_btn.prop('disabled', false).html(form_btn_old_msg);
-                            $(form_result_div).html(data.message).fadeIn('slow');
-                            setTimeout(function () { $(form_result_div).fadeOut('slow') }, 6000);
-                        }
-                    });
-                }
-            });
-        })(jQuery);
-    </script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/knob.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/owl.js"></script>
+	<script src="js/script.js"></script>
 
     <!-- Privacy & Cookie Policy Links -->
 <p style="text-align:center; padding: 20px 0;">
