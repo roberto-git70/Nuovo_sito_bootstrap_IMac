@@ -36,14 +36,13 @@ License: copyright commercial
 29. Main Footer
 **********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
-@import url("animate.css");
-@import url("owl.css");
+@import url("owl.min.css");
 @import url("jquery.fancybox.min.css");
-@import url("linear.css");
+@import url("linear.min.css");
 @import url("fontawesome.css");
-@import url("flaticon.css");
-@import url("tm-bs-mp.css");
-@import url("tm-utility-classes.css");
+@import url("flaticon.min.css");
+@import url("tm-bs-mp.min.css");
+@import url("tm-utility-classes.min.css");
 :root {
   --theme-color1: #0f0f0f;
   --theme-color2: #ff3838;
