@@ -1292,6 +1292,23 @@ img {
   transition: 0.5s;
   border-radius: 10px;
 }
+
+.btn-box {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.btn-box .theme-btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  font-size: 1rem; /* responsivo e gestibile */
+  white-space: normal;
+  word-break: break-word;
+  border-radius: 10px;
+}
 .banner-social-links li a,
 .btn-style-three,
 .btn-style-two {
@@ -1852,7 +1869,7 @@ img {
   margin-right: -14px;
 }
 .main-menu .navigation > li.dropdown > a:after {
-  content: "\f107";
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -1868,6 +1885,35 @@ img {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+/* .dropdown-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  width: 5px;
+  height: 5px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  vertical-align: middle;
+  margin-top: 13px;
+} */
+
+.chevron-down {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(45deg);
+  margin-left: 8px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+@media (max-width: 1023px) {
+  .chevron-down {
+    display: none;
+  }
+}
+
 .main-menu .navigation > li.dropdown:hover > ul {
   visibility: visible;
   opacity: 1;
@@ -2079,23 +2125,21 @@ img {
 .project-block .info-box .title:hover {
   color: var(--bg-theme-color2);
 }
+.header-style-one {
+  position: relative;
+}
+
 .header-style-one::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(var(--bg-theme-color1)),
-    to(transparent)
-  );
   background: linear-gradient(var(--bg-theme-color1), transparent);
-  min-height: 300px;
-  content: "";
+  z-index: 0;
 }
+
 .header-style-one .container-fluid {
   padding: 0 80px;
 }
@@ -2142,6 +2186,10 @@ img {
   background: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+/* Colore freccia nel menu sticky */
+.sticky-header .chevron-down{
+  border-color:#707070;   /* oppure var(--theme-color1) */
 }
 .sticky-header.fixed-header {
   opacity: 1;
@@ -8098,8 +8146,9 @@ table.tbl-shopping-cart > thead > tr > th {
   top: 1px;
   font-size: 14px;
   font-weight: 900;
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6 Free"; /* ✅ CORRETTO */
   color: #fff;
+
 }
 .page-breadcrumb li:last-child {
   padding-right: 0;
@@ -10268,4 +10317,16 @@ table.tbl-shopping-cart > thead > tr > th {
   font-size: 16px;
   line-height: 30px;
   color: #8f8f8f;
+}
+
+/* Freccia dropdown in puro CSS */
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
 }

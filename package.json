@@ -1,0 +1,27 @@
+{
+  "name": "mmr_sito_bootstrap-imac",
+  "version": "1.0.0",
+  "main": "check-css-links.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roberto-git70/Nuovo_sito_bootstrap_IMac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roberto-git70/Nuovo_sito_bootstrap_IMac/issues"
+  },
+  "homepage": "https://github.com/roberto-git70/Nuovo_sito_bootstrap_IMac#readme",
+  "description": "",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge": "postcss css/style.css -o css/style.purged.min.css"
+  }
+}

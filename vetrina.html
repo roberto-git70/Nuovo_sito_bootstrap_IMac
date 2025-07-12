@@ -13,17 +13,26 @@
 <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-title" content="MM&R">
 <link rel="manifest" href="./images/favicon/site.webmanifest">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</noscript>
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Preconnect Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts con preload -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+</noscript>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!-- CSS principali: devono essere caricati subito -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/style.purged.min.css">
 <link rel="stylesheet" href="css/responsive.min.css">
 <!-- CSS non critici: caricamento differito -->
-<link rel="preload" href="css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<noscript><link rel="stylesheet" href="css/fontawesome.min.css"></noscript>
 <link rel="preload" href="css/flaticon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
 <noscript><link rel="stylesheet" href="css/flaticon.min.css"></noscript>
 <link rel="preload" href="css/linear.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
@@ -55,24 +64,31 @@
 </a>
 </div>
 <!--Nav Box-->
+<!--Nav Box-->
 <div class="nav-outer">
-    <nav class="nav main-menu">
+  <nav class="nav main-menu">
     <ul class="navigation">
-        <li class="dropdown-center">
+      <li class="dropdown-center">
         <a href="/">Home</a>
-        <li class="dropdown-center"><a href="il_nostro_metodo.html">Il Nostro Metodo</a>
-        <li class="dropdown"><a href="#">Soluzioni</a>
+      </li>
+      <li class="dropdown-center">
+        <a href="il_nostro_metodo.html">Il Nostro Metodo</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">Soluzioni <span class="chevron-down"></span></a>
         <ul>
-            <li><a href="aziendali.html" title="Vai alla pagina dei Siti Aziendali">Siti Aziendali</a></li>
-            <li><a href="professionisti.html"title="Scopri soluzioni per liberi professionisti">Professionisti</a></li>
-            <li><a href="vetrina.html" title="Siti vetrina per visibilità online">Siti Vetrina</a></li>
-            <li><a href="ecommerce.html" title="Visita la pagina dei Siti Ecommerce">Siti Ecommerce</a></li>
-            <li><a href="landing.html" title="Landing page per campagne mirate">Landing Page</a></li>
+          <li><a href="aziendali.html" title="Vai alla pagina dei Siti Aziendali">Siti Aziendali</a></li>
+          <li><a href="professionisti.html" title="Scopri soluzioni per liberi professionisti">Professionisti</a></li>
+          <li><a href="vetrina.html" title="Siti vetrina per visibilità online">Siti Vetrina</a></li>
+          <li><a href="ecommerce.html" title="Visita la pagina dei Siti Ecommerce">Siti Ecommerce</a></li>
+          <li><a href="landing.html" title="Landing page per campagne mirate">Landing Page</a></li>
         </ul>
-        </li>
-        <li><a href="contatti.html" title="">Contatti</a></li>
+      </li>
+      <li>
+        <a href="contatti.html" title="">Contatti</a>
+      </li>
     </ul>
-    </nav>
+  </nav>
 </div>
 <!-- Main Menu End-->
 <div class="outer-box">
