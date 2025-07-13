@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Vuoi un sito professionale e su misura? MM&amp;R crea esperienze web che valorizzano la tua attività e generano risultati concreti.">
-<meta name="keywords" content="web design agency, siti web professionali Pistoia, web design pistoia, sviluppo web Toscana, realizzazione siti web Pistoia, creazione siti web per piccole e medie imprese Pistoia">
-<meta name="author" content="MM&R web design agency">
-<title>MM&R | Soluzioni Professionali per il Web Design |</title>
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg">
-<link rel="shortcut icon" href="./images/favicon/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="MM&R">
-<link rel="manifest" href="./images/favicon/site.webmanifest">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</noscript>
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Preconnect Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Google Fonts con preload -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
-</noscript>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!-- CSS principali: devono essere caricati subito -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.purged.min.css">
-<link rel="stylesheet" href="css/responsive.min.css">
-<!-- CSS non critici: caricamento differito -->
-<link rel="preload" href="css/flaticon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<noscript><link rel="stylesheet" href="css/flaticon.min.css"></noscript>
-<link rel="preload" href="css/linear.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<noscript><link rel="stylesheet" href="css/linear.min.css"></noscript>
-<!-- reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Vuoi un sito professionale e su misura? MM&amp;R crea esperienze web che valorizzano la tua attività e generano risultati concreti.">
+  <meta name="keywords" content="web design agency, siti web professionali Pistoia, web design pistoia, sviluppo web Toscana, realizzazione siti web Pistoia, creazione siti web per piccole e medie imprese Pistoia">
+  <meta name="author" content="MM&R web design agency">
+  <title>MM&R | Soluzioni Professionali per il Web Design |</title>
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MM&R">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+
+  <!-- Font Awesome preload -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </noscript>
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts con preload -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+  </noscript>
+
+  <!-- CSS principali: devono essere caricati subito -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.purged.min.css">
+  <link rel="stylesheet" href="css/responsive.min.css">
+
+  <!-- CSS non critici: caricamento differito -->
+  <link rel="preload" href="css/non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="css/non-critical.min.css"></noscript>
+
+  <link rel="preload" href="css/flaticon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="css/flaticon.min.css"></noscript>
+
+  <link rel="preload" href="css/linear.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="css/linear.min.css"></noscript>
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
 <body>
 <div class="page-wrapper">
 <!-- Preloader -->
