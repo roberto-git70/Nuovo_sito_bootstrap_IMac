@@ -1,5 +1,13 @@
 RewriteEngine On
 
-# Evita il redirect se la richiesta è già per la root
+# Assicurati che sia tutto su HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect da www a non-www (canonical senza www)
+RewriteCond %{HTTP_HOST} ^www\.soluzioniwebdesign\.com [NC]
+RewriteRule ^(.*)$ https://soluzioniwebdesign.com/$1 [L,R=301]
+
+# Redirect da /index.html a /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.html\s [NC]
-RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^index\.html$ https://soluzioniwebdesign.com/ [R=301,L]
